@@ -1,0 +1,137 @@
+/* Estilos globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #CCCCCC;
+  }
+  
+  /* Container 404 */
+  .container-404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .container-star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('estrelas.png'); /* imagem de estrelas */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+  }
+  
+  .container-bird {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Bird */
+  .bird {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: bird-anim 2s infinite;
+  }
+  
+  .bird-anim {
+    animation: bird-anim 2s infinite;
+  }
+  
+  @keyframes bird-anim {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .bird-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wing {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  .wing-left {
+    top: 20px;
+    left: 20px;
+    transform: rotate(45deg);
+  }
+  
+  .wing-right {
+    top: 20px;
+    right: 20px;
+    transform: rotate(-45deg);
+  }
+  
+  .wing-left-top {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  .wing-right-top {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  /* Container título */
+  .container-title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .number {
+    font-size: 64px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: #999;
+  }
+  
+  .mt-8 {
+    margin-top: 8px;
+  }
+  
